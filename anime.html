@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Berbecy Music</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+		<link type="text/css" rel= "stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link type="text/css" rel= "stylesheet" href="css/index.css"/>
+		
+		<link rel="icon" href="img/Browser.png">		
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body onload="mostra_video()">		
+		<header> 		
+			<div class="header_griggio">
+				<ul class="titolo_rosa " onclick="home()"> 
+					<li class="titolo">
+						BERBECY
+					</li>
+				</ul>	
+				<ul class="titolo_griggio"> 
+					<a onclick="anime()">
+						<li class="titolo">
+							ANIME
+						</li>
+					</a>
+					<a onclick="info()">
+						<li class="titolo">
+							INFO
+						</li>
+					</a>
+				</ul>				
+			</div>
+		</header>	
+		
+		<article>
+		<div id="barra_bianca" class="sfondo_bianco">
+			<img id="logo" class="img_logo w3-display-middle " src ="img/logo.svg" alt="immagine logo" >
+		</div>	
+		<img src="img/bg0.jpg" style="height:100%; width:100%;" alt="sfondo" >
+		
+		<div class="contenitoreEsterno">
+			<div class="contenitoreInterno w3-twothird w3-display-middle" style="background-color: white">
+				<div class="w3-display-topleft" style="width:100%; position:relative;">
+					<h1 id="titoloAnime" style="color:#e64d7c">Anime</h1>
+					<p style="color:#e64d7c">List of most favorited anime:</p>	
+				</div>
+				
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('one-punch.html')">
+					<div class="img_casella_anime">
+						<img src="img/one-punch.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						One Punch Man
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('one-piece.html')">
+					<div class="img_casella_anime">
+						<img src="img/one-piece.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						One Piece
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('attack-on-titan.html')">
+					<div class="img_casella_anime">
+						<img src="img/attack-on-titan.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Attack On Titan
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('tokyo-ghoul.html')">
+					<div class="img_casella_anime">
+						<img src="img/tokyo-ghoul.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Tokyo Ghoul
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('my-hero-accademia.html')">
+					<div class="img_casella_anime">
+						<img src="img/my-hero-accademia.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						My Hero Accademia
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('naruto.html')">
+					<div class="img_casella_anime">
+						<img src="img/naruto.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Naruto
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('pokemon.html')">
+					<div class="img_casella_anime">
+						<img src="img/pokemon.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Pokemon
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('dragon-ball.html')">
+					<div class="img_casella_anime">
+						<img src="img/goku.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Dragon Ball
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('code-geass.html')">
+					<div class="img_casella_anime">
+						<img src="img/code-geass.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Code Geass
+					</p>
+				</div>
+				<div class="casella_anime w3-mobile" onclick="pagina_anime('digimon.html')">
+					<div class="img_casella_anime">
+						<img src="img/digimon.jpg" class="img_anime" alt="immagineAnime" >
+					</div>
+					<p style="text-align:center;">
+						Digimon
+					</p>
+				</div>
+			<div>
+		</div>
+		</article>
+		
+		<footer>
+			<div class="footer_div_guarda">
+				<ul class="footer_ul_guarda w3-display-middle">	
+					<li><a class="a_footer" href="#titoloAnime">WATCH ANIME LIST <i class="fa fa-music" style="font-size:18px;"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer_rosa">				
+			</div>
+			<p class="testo_footer">
+				OFFICIAL ANIME SITE FOR LISTEN MUSIC AND THEME SONG, OF THE BEST ANIME 2018.<br>
+				WATCH ALL ANIME LIST HERE!
+			</p>
+		</footer>		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>		<!-- Inserisco jquery che e una libreria js -->
+		<script src="js/index.js"/></script>								
+	</body>
+</html>

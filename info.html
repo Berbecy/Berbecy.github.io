@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Berbecy Music</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+		<link type="text/css" rel= "stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link type="text/css" rel= "stylesheet" href="css/index.css"/>
+		
+		<link rel="icon" href="img/Browser.png">		
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body onload="mostra_video()">		
+		<header> 		
+			<div class="header_griggio">
+				<ul class="titolo_rosa" onclick="home()"> 
+					<li class="titolo">
+						BERBECY
+					</li>
+				</ul>	
+				<ul class="titolo_griggio"> 
+					<a onclick="anime()">
+						<li class="titolo">
+							ANIME
+						</li>
+					</a>
+					<a onclick="info()">
+						<li class="titolo">
+							INFO
+						</li>
+					</a>
+				</ul>				
+			</div>
+		</header>	
+		
+		<article>
+		<div id="barra_bianca" class="sfondo_bianco">
+			<img id="logo" class="img_logo w3-display-middle " src ="img/logo.svg" alt="immagine logo" >
+		</div>	
+		<img src="img/bg1.jpg" style="height:100%; width:100%;" alt="sfondo" >
+		
+		<div class="contenitoreEsterno">
+			<div class="contenitoreInterno w3-twothird w3-display-middle" style="background-color: rgba(39,40,34,0.97)">
+				<h1 id="titoloInfo" style="color:#e64d7c">Elenco delle FAQ del sito:</h1>
+				
+				<button onclick="nascondiInfo('titolo1')" class="w3-btn w3-block info_tasto">1) Cos'è Berbecy Anime Music?</button>
+				<div id="titolo1" class="w3-container w3-hide w3-white" style="border:none">
+					<p style="font-family: verdana;">
+												<b style="font-weight: bold;">Berbecy Anime Music</b> è stato creato come una fonte di intrattenimento 
+													che si concentra sul mezzo di musica/audio di cartoni giapponesi (anime) e 
+														fumetti giapponesi (manga). <b style="font-weight: bold;">Berbecy</b> è stata fondata da <i style="font-style: italic;">Dodita Ionut Ciprian</i> nel
+															dicembre del 2017.
+																	Con sigle, musica, remix, in italiano, inglese ma sopratutto in giapponese, riguardanti il mondo dell'anime e dei manga, <b style="font-weight: bold;">Berbecy</b> è stato e continua ad essere la fonte n. 1 
+																		per questo genere di intrattenimento, che unisce le persone con le canzoni sugli anime e sui manga più famosi.
+																				L'obiettivo di <b style="font-weight: bold;">Berbecy</b> è quello di rendere la musica degli Anime più conosciuta. Oggi è
+																					a disposizione sia dei nuovi fan che dei veterani Otaku.
+					</p>
+				</div>
+				
+				<button onclick="nascondiInfo('titolo2')" class="w3-btn w3-block info_tasto">2) Cosa Berbecy non è?</button>
+				<div id="titolo2" class="w3-container w3-hide w3-white" style="border:none">
+					<p>
+						<ul class="ul_info" style="font-family: verdana;">
+						  <li class="li_info">-Una rete televisiva o una stazione.</li>
+						  <li class="li_info">-Uno studio di doppiaggio / registrazione vocale.</li>
+						  <li class="li_info">-Una compagnia di animazione.</li>
+						  <li class="li_info">-Un produttore o distributore di merci.</li>
+						  <li class="li_info">-Un sito di streaming di film o anime.</li>
+						  <li class="li_info">-In vendita.</li>
+						</ul>
+					</p>
+				</div>
+				
+				<button onclick="nascondiInfo('titolo3')" class="w3-btn w3-block info_tasto">3) Che cosa sono i Manga e gli Anime?</button>
+				<div id="titolo3" class="w3-container w3-hide w3-white" style="border:none">
+					<p style="font-family: verdana;">
+						Molto semplicemente si potrebbe dire che i Manga sono i fumetti giapponesi
+						e gli Anime dovrebbero essere in teoria la loro versione animata e a volte anche cinematografica.
+						Il Giappone praticamente sta facendo e utilizzando l'arte dei cartoni da sempre 
+						(ci sono infatti divertenti illustrazioni d'inchiostro raffiguranti animali e caricature centinaia 
+						di anni fa, che si ricollegano per le loro rassomiglianze al manga moderno).
+						Certamente, alcune caratteristiche dei manga sono state riprese dall'ovest,
+						ma le principali caratteristiche, quali le semplici righe e le caratteristiche 
+						stilizzate, sono distintamente giapponesi, anche se sembra che l'arte 
+						cinese abbia avuto una influenza piu' grande di quella occidentale.
+						Secondo, i manga e gli anime giapponesi sono di tutti i tipi e per tutte le persone. 
+						Al contrario degli Stati Uniti, che normalmente credono che "
+						i comics siano per bambini ", il manga-Ka giapponese (disegnatore)
+						scrive per tutti dai bambini ai ragazzi, agli uomini e alle donne.
+					</p>
+				</div>
+				
+				<button onclick="nascondiInfo('titolo4')" class="w3-btn w3-block info_tasto">4) Chi gestisce Berbecy?</button>
+				<div id="titolo4" class="w3-container w3-hide w3-white" style="border:none">
+					<p style="font-family: verdana;">						
+						Berbecy è gestito da <i style="font-style: italic;">Dodita Ionut Ciprian</i>.
+					</p>
+				</div>
+				
+				<button onclick="nascondiInfo('titolo5')" class="w3-btn w3-block info_tasto">5) Come iniziare?</button>
+				<div id="titolo5" class="w3-container w3-hide w3-white" style="border:none">
+					<p style="font-family: verdana;">						
+						Berbecy è facile da usare, per qualsiasi persona. Per iniziare basta andare sulla pagina con la lista degli anime
+							disponibili, schiacciarci e poi selezionare il brano. 
+					</p>
+				</div>
+				
+				<button onclick="nascondiInfo('titolo6')" class="w3-btn w3-block info_tasto">5) Aiuto BUG?</button>
+				<div id="titolo6" class="w3-container w3-hide w3-white" style="border:none">
+					<p style="font-family: verdana;">						
+						Gentile cliente, il sito è ancora in fase ALPHA, è molto probabile riuscire a trovare un errore. 
+							Al più presto si cerca di risolvere tutto.
+								Grazie e buon utilizzo di questo website!
+					</p>
+				</div>
+			<div>
+		</div>
+		</article>
+		
+		<footer>
+			<div class="footer_div_guarda">
+				<ul class="footer_ul_guarda w3-display-middle">	
+					<li><a class="a_footer" href="#titoloInfo">WATCH INFO <i class="fa fa-music" style="font-size:18px;"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer_rosa">				
+			</div>
+			<p class="testo_footer">
+				OFFICIAL ANIME SITE FOR LISTEN MUSIC AND THEME SONG, OF THE BEST ANIME 2018.<br>
+				WATCH ALL INFO HERE!
+			</p>
+		</footer>		
+		<script src="js/index.js"/></script>								
+	</body>
+</html>

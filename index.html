@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Berbecy Music</title>
+
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+
+		<link rel= "stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel= "stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" href="img/Browser.png">
+	</head>
+
+	<body onload="mostra_video_home()">
+		<header>
+			<div class="header_griggio">
+				<ul class="titolo_rosa" onmouseover="mostra_logo_home()" onmouseout="mostra_video_home()">
+					<li class="titolo">
+						BERBECY
+					</li>
+				</ul>
+				<ul class="titolo_griggio">
+					<a onclick="anime()">
+						<li class="titolo">
+							ANIME
+						</li>
+					</a>
+					<a onclick="info()">
+						<li class="titolo">
+							INFO
+						</li>
+					</a>
+				</ul>
+			</div>
+		</header>
+
+		<article>
+			<div id="barra_bianca" class="sfondo_bianco">
+				<img id="logo" class="img_logo w3-display-middle " src ="img/logo.svg" alt="immagine logo" >
+			</div>
+			<video id="video_intro" class="w3-display-middle" width="100%" autoplay>
+				<source src="video/sigla.mp4" type="video/mp4">
+				<source src="video/sigla.mp4" type="video/ogg">
+				Your browser does not support HTML5 video.
+			</video>
+		</article>
+
+		<footer>
+			<div class="footer_div_guarda">
+				<ul class="footer_ul_guarda w3-display-middle">
+					<li><a class="a_footer" onclick="anime()">WATCH ANIME LIST <i class="fa fa-music" style="font-size:18px;"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer_rosa">
+			</div>
+			<p class="testo_footer">
+				OFFICIAL ANIME SITE FOR LISTEN MUSIC AND THEME SONG, OF THE BEST ANIME 2018.<br>
+				WATCH THE VIDEO HERE!
+			</p>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>		<!-- Inserisco jquery che e una libreria js -->
+		<script src="js/index.js"/></script>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Berbecy Music</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1"/>
+		<link type="text/css" rel= "stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link type="text/css" rel= "stylesheet" href="css/index.css"/>
+		<link type="text/css" rel= "stylesheet" href="css/canzoni.css"/>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<link rel="icon" href="img/Browser.png">	
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">		
+	</head>
+	<body onload="mostra_video()">
+		<header>
+			<div class="header_griggio">
+				<ul class="titolo_rosa" onclick="home()">
+					<li class="titolo">
+						BERBECY
+					</li>
+				</ul>
+				<ul class="titolo_griggio">
+					<a onclick="anime()">
+						<li class="titolo">
+							ANIME
+						</li>
+					</a>
+					<a onclick="info()">
+						<li class="titolo">
+							INFO
+						</li>
+					</a>
+				</ul>		
+			</div>
+		</header>
+		<article>
+			<div id="barra_bianca" class="sfondo_bianco">
+				<img id="logo" class="img_logo w3-display-middle " src ="img/logo.svg" alt="immagine logo" >
+			</div>
+			<img src="img/one-punch_2.jpg" style="height:100%; width:100%;" alt="sfondo" >
+			<div class="contenitoreEsterno">
+				<div class="contenitoreInterno contenitoreInterno_musica w3-twothird w3-display-middle">
+					<h1 style="color:#e64d7c">ONE PUNCH MAN</h1>
+					<table class="tabella w3-table w3-rest">
+						<thead>
+							<tr class="w3-tiny" style="background-color:rgba(1,1,1,0);color:#e64d7c;">
+								<th>PLAY</th>
+								<th>TITOLO</th>
+								<th>DURATA</th>
+								<th>PREFERITI</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr onmouseover="mostra_play('riga1')" onmouseout="nascondi_play('riga1')">
+								<td>
+									<i class="fa fa fa-play-circle" style="font-size:28px;color:white;opacity:0;" id="riga1"></i>
+									<audio id="i" src="music/one-punch-man/THE HERO_Hiwo Tsukero.mp3" data-titolo="THE HERO Hiwo Tsukero" data-album="One Punch Man" data-numero="0" data-durata="3:47">
+										<p>Browser non supporta la canzone</p>
+									</audio>
+								</td>
+								<td>THE HERO Hiwo Tsukero</td>
+								<td>3:47</td>
+								<td></td>
+							</tr>
+							
+							<tr onmouseover="mostra_play('riga2')" onmouseout="nascondi_play('riga2')">
+								<td>
+									<i class="fa fa fa-play-circle" style="font-size:28px;color:white;opacity:0;" id="riga2"></i>
+									<audio id="i" src="music/one-punch-man/OST_ Main Theme.mp3" data-titolo="OST_ Main Theme" data-album="One Punch Man" data-numero="1" data-durata="1:42">
+										<p>Browser non supporta la canzone</p>
+									</audio>
+								</td>
+								<td>OST_ Main Theme</td>
+								<td>1:42</td>
+								<td></td>
+							</tr>
+							
+							<tr onmouseover="mostra_play('riga3')" onmouseout="nascondi_play('riga3')">
+								<td>
+									<i class="fa fa fa-play-circle" style="font-size:28px;color:white;opacity:0;" id="riga3"></i>
+									<audio id="i" src="music/one-punch-man/The Hero ita.mp3" data-titolo="The Hero ita" data-album="One Punch Man" data-numero="2" data-durata="2:57">
+										<p>Browser non supporta la canzone</p>
+									</audio>
+								</td>
+								<td>The Hero ita</td>
+								<td>2:57</td>
+								<td></td>
+							</tr>
+							
+							<tr onmouseover="mostra_play('riga4')" onmouseout="nascondi_play('riga4')">
+								<td>
+									<i class="fa fa fa-play-circle" style="font-size:28px;color:white;opacity:0;" id="riga4"></i>
+									<audio id="i" src="music/one-punch-man/The Hero (Remix).mp3" data-titolo="The Hero (Remix)" data-album="One Punch Man" data-numero="3" data-durata="3:16">
+										<p>Browser non supporta la canzone</p>
+									</audio>
+								</td>
+								<td>The Hero (Remix)</td>
+								<td>3:16</td>
+								<td></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</article>
+
+		<footer style="background-color:white; color:black; border-top: 3px solid #e64d7c;">
+			<div class="left">
+				<div class="above">
+				  <h3 id="title"></h3>
+				</div>
+				<div class="under">
+				  <h4 id="album"></h4>
+				</div>
+			</div>
+			<div class="center">
+				<div class="above">
+				  <ul>
+					<li>
+					  <button id="shuffle" type="button"><i class="material-icons md-24">shuffle</i></button>
+					</li>
+					<li>
+					  <button id="skipPrevious" type="button"><i class="material-icons md-24">skip_previous</i></button>
+					</li>
+					<li>
+					  <button id="play" type="button"><i class="material-icons md-36">play_circle_outline</i></button>
+					</li>
+					<li>
+					  <button id="skipNext" type="button"><i class="material-icons md-24">skip_next</i></button>
+					</li>
+					<li>
+					  <button id="repeat" type="button"><i class="material-icons md-24">replay</i></button>
+					</li>
+				  </ul>
+				</div>
+				<div class="under"><span id="durationProgress">0:00</span>
+				  <input id="durationProgressBar" type="range" min="0" step="0.001" value="0"><span id="duration">5:02</span>
+				</div>
+			</div>
+			<div class="right">
+				<div class="middle"><i class="material-icons md-18">volume_up</i>
+				  <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+				</div>
+			</div>	
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>		<!-- Inserisco jquery che e una libreria js -->
+		<script src="js/index.js"/></script>
+		<script src="js/canzoni.js"></script>
+	</body>
+</html>

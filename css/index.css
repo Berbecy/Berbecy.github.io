@@ -1,0 +1,232 @@
+﻿body{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+header{
+	background-color: rgb(39,40,34);
+	position: fixed;
+	top:0; right:0; bottom:auto; left:0;
+	height: 70px;
+	z-index: 100;									/* z= profondita --> serve per settare il livello di profondita*/
+
+	color: white;
+	font-size: 20px;
+}
+article{
+	position: fixed;
+	top:70px; right:0; bottom:100px; left:0;
+	color: white;
+	width: 100%;
+	background-color: rgb(0,0,0);
+}
+footer{
+	background-color: black;
+	position: fixed;
+	top:auto; right:0; bottom:0; left:0;
+	height: 100px;
+	z-index: 100;
+
+	color: white;
+	font-size: 10px;
+}
+p.testo_footer{
+	text-align: center;
+	height:80%;
+	width:100%;
+	word-spacing: 2px;
+}
+div.header_griggio{
+	background-color: rgb(39,40,34);
+	color: white;
+}
+ul.titolo_rosa{
+	background-color: #e64d7c;
+	margin: 0;
+	padding: 28px 10px;
+	height: 100%;
+	float: left;
+	position: relative;
+	left: 40%;
+}
+ul.titolo_griggio{
+	margin: 0;
+	padding: 25px 10px;
+	height: 100%;
+	float: left;
+	position: relative;
+	left: 40%;
+}
+li.titolo{
+	display: inline-block;
+	margin: 0px 10px;
+}
+li.titolo:hover{
+	border-bottom: solid 2px #e64d7c;
+    display: inline;
+    padding-bottom: 3px;
+}
+.footer_rosa{
+	background-color: #e64d7c;
+	width: 100%;
+	height: 5%;
+}
+div.footer_div_guarda{
+	background-color: rgb(39,40,34);
+	width: 100%;
+	height: 65%;
+}
+ul.footer_ul_guarda{
+	background-color: #e64d7c;
+	margin: 0;
+	padding: 5px;
+	float: left;
+	position: relative;
+	opacity:0.8;
+}
+ul.footer_ul_guarda:hover{
+	opacity:1;
+}
+a.a_footer{
+	text-decoration:none;
+	color: white;
+	font-size: 15px;
+}
+a{
+	text-decoration:none;
+}
+.img_logo{
+	position: fixed;
+	float:left;
+	height: 60%;
+	width: auto;
+	max-width: 100%;
+    z-index: 400;
+	opacity: 1;
+	transition: opacity 6000ms;
+	-webkit-transition: opacity 6000ms;
+}
+div.sfondo_bianco{
+	position: absolute;
+	background-color: white;
+	width: 100%;
+    height: 100%;
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 10s; /* Safari */
+    transition-property: width;
+    transition-duration: 6000ms;
+	z-index: 200;
+	border: 5px solid #e64d7c;
+}
+div.contenitoreEsterno{
+	position: absolute;
+	top:0; right:0; bottom:0; left:0;
+
+	float: left;
+	width:100%;
+}
+div.contenitoreInterno{
+	float: left;
+	height: 90%;
+	padding: 40px;
+	background-color:rgb(39,40,34);
+	overflow-y: scroll;
+	border: 2px #e64d7c;
+}
+div.contenitoreInterno_musica{
+	opacity:0.9;
+}
+div.contenitoreInterno::-webkit-scrollbar {
+    width: 1em;
+}
+div.contenitoreInterno::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #e64d7c;
+}
+div.contenitoreInterno::-webkit-scrollbar-thumb {
+	outline: 1px solid slategrey;
+}
+div.contenitoreInterno::-webkit-scrollbar-thumb {
+	background-color: rgba(230,77,124,0.4);
+	outline: 1px solid slategrey;
+}
+div.casella_anime{
+	background-color:white;
+	color: black;
+	float: left;
+	height: 180px;
+	width: 25%;
+	padding: 6px;
+	margin: 10px 10px;
+	left: 20;
+}
+div.casella_anime:hover{
+    box-shadow: 0 4px 8px 0 rgba(230, 77, 124,0.4);
+	border:3px;
+	border-radius:30px;
+	transition: 0.3s;
+}
+div.img_casella_anime{
+	float: left;
+	height: 70%;
+	width: 90%;
+	margin: 10px;
+	left: 15px;
+}
+img.img_anime{
+	height:100%;
+	width:100%;
+	border-radius:20px;
+}
+.tabella{
+	float:left;
+	width:100%;
+	padding: 10px;
+	text-align:center;
+	color: black;
+}
+tr{
+	background-color:rgba(39,40,34,0.9);
+	color: white;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e64d7c;
+}
+tr:hover{
+	background-color:#e64d7c;
+}
+
+.info_tasto {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.info_tasto:hover {
+    background-color: #e64d7c; 
+	color: white;
+}
+li.li_info{
+	display: block;
+}
+li.li_info:hover{
+	border-bottom: solid 0px;
+    display: inline;
+    padding-bottom: 0px;
+}
+ul.ul_info{
+	list-style: none;
+}
+@media screen and (max-width: 768px) {
+  ul.titolo_rosa{
+    left: 10%;
+  }
+  ul.titolo_griggio{
+	left: 10%;
+}
+
+
