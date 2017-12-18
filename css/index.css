@@ -47,6 +47,7 @@ ul.titolo_rosa{
 	float: left;
 	position: relative;
 	left: 40%;
+	cursor: pointer;
 }
 ul.titolo_griggio{
 	margin: 0;
@@ -59,6 +60,7 @@ ul.titolo_griggio{
 li.titolo{
 	display: inline-block;
 	margin: 0px 10px;
+	cursor: pointer;
 }
 li.titolo:hover{
 	border-bottom: solid 2px #e64d7c;
@@ -116,6 +118,7 @@ div.sfondo_bianco{
     transition-duration: 6000ms;
 	z-index: 200;
 	border: 5px solid #e64d7c;
+	cursor: wait;
 }
 div.contenitoreEsterno{
 	position: absolute;

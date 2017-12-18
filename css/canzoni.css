@@ -1,6 +1,6 @@
 ﻿@font-face {
   font-family: FuturaPTLight;
-  src: url("../assets/fonts/FuturaPTLight.otf") format("opentype");
+  src: url("../fonts/FuturaPTLight.otf") format("opentype");
 }
 /* Rules for sizing the icon. */
 .material-icons.md-18 {
