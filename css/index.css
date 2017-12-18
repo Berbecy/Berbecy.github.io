@@ -118,7 +118,7 @@ div.sfondo_bianco{
     transition-duration: 6000ms;
 	z-index: 200;
 	border: 5px solid #e64d7c;
-	cursor: wait ;
+	cursor: wait;
 }
 div.contenitoreEsterno{
 	position: absolute;
