@@ -190,6 +190,7 @@ footer .center .under input {
 footer .right {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   footer .left {
     position: absolute;
