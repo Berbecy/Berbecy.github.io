@@ -156,7 +156,7 @@ function skipNext(){
   plays();
 }
 
-function changeMusic(var m=0){
+function changeMusic(){
   var musicCurrent = sessionStorage.getItem('musicCurrent');
   var s = musicPlaylist[musicCurrent];
   
