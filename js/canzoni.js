@@ -156,9 +156,10 @@ function skipNext(){
   plays();
 }
 
-function changeMusic(){
+function changeMusic(var m=0){
   var musicCurrent = sessionStorage.getItem('musicCurrent');
   var s = musicPlaylist[musicCurrent];
+  
   $('#title').html($(musicPlaylist[sessionStorage.getItem('musicCurrent')]).attr('data-titolo'));
   $('#album').html($(musicPlaylist[sessionStorage.getItem('musicCurrent')]).attr('data-album'));
   $('#duration').html($(musicPlaylist[sessionStorage.getItem('musicCurrent')]).attr('data-durata'));
