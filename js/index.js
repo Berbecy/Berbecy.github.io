@@ -1,7 +1,7 @@
 var vid = document.getElementById("video_intro");
 var barra_bianca = document.getElementById("barra_bianca");
 var logo = document.getElementById("logo");
-var tempo = 3000;
+var tempo = 6000;
 
 if ($('#video_intro').length){
 	vid.onended = function() {

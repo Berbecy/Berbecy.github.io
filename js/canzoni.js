@@ -158,7 +158,7 @@ function skipNext(){
 
 function changeMusic(){
   var musicCurrent = sessionStorage.getItem('musicCurrent');
-  var s = musicPlaylist[musicCurrent];  
+  var s = musicPlaylist[musicCurrent];
   
   $('#title').html($(musicPlaylist[sessionStorage.getItem('musicCurrent')]).attr('data-titolo'));
   $('#album').html($(musicPlaylist[sessionStorage.getItem('musicCurrent')]).attr('data-album'));
